@@ -1,6 +1,6 @@
 {
   "deploy_settings": {
-    "eurostarDev": {
+    "[aws_profile_name]": {
       "skill_id": "[skill_id]",
       "was_cloned": false,
       "merge": {

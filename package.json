@@ -4,6 +4,14 @@
   "description": "Basic template for building an Alexa skill with deployment and backup scripts.",
   "main": "lambda/custom/index.js",
   "scripts": {
+    "deploy:skill": "./scripts/deploy-skill.sh",
+    "deploy:model": "./scripts/deploy-model.sh",
+    "deploy:lambda": "./scripts/deploy-lambda.sh",
+    "deploy:all": "npm run deploy:skill && npm run deploy:model && npm run deploy:lambda",
+    "get:skill": "./scripts/get-skill.sh",
+    "get:model": "./scripts/get-model.sh",
+    "get:lambda": "./scripts/get-lambda.sh",
+    "get:all": "npm run get:skill && npm run get:model && npm run get:lambda",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/ThorneGladwin/alexa_skill_template/issues"
   },
-  "homepage": "https://github.com/ThorneGladwin/alexa_skill_template#readme"
+  "homepage": "https://github.com/ThorneGladwin/alexa_skill_template#readme",
+  "devDependencies": {
+    "ask-cli": "^1.6.2",
+    "ask-sdk": "^2.4.0"
+  }
 }

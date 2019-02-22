@@ -5,7 +5,7 @@ set -o pipefail
 [ -f .env ] && source .env
 
 localOrCloud="local"
-target="models"
+target="skill"
 
 # check we have the profile
 if [ -z $SKILL_PROFILE ]; then 
@@ -18,22 +18,18 @@ if [ -z $SKILL_ID ]; then
     echo "Please add SKILL_ID env file in your .env."
     exit 1
 fi
-echo "Get model for skill: $SKILL_ID"
+echo "Get definition for skill: $SKILL_ID"
 
 # Create backup folder
 source $PWD/scripts/backup-helper.sh
 localBackupFolder=$(createBackupFolder $localOrCloud $target)
 echo "Backup folder created on $localOrCloud for $target: $cloudBackupFolder"
 
-cp -R models/. "$localBackupFolder"
+cp -R skill.json "$localBackupFolder"
 echo "If there are any problems, please check the backup folder: $localBackupFolder"
 
-# get models
-for file in models/*; do
-    fileNoExt=${file##*/}
-    language=${fileNoExt%.*}
-    echo "Updating model for $language: $PWD/models/$language.json"
-    ask api get-model -p $SKILL_PROFILE -s $SKILL_ID -l $language > "$PWD/models/$language.json"
-done
+# get skill
+echo "Updating skill: $PWD/skill.json"
+ask api get-skill -p $SKILL_PROFILE -s $SKILL_ID > "$PWD/skill.json"
 
 echo "Done!"
