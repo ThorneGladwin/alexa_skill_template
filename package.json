@@ -1,0 +1,19 @@
+{
+  "name": "alexa-skill-template",
+  "version": "1.0.0",
+  "description": "Basic template for building an Alexa skill with deployment and backup scripts.",
+  "main": "lambda/custom/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThorneGladwin/alexa_skill_template.git"
+  },
+  "author": "Thorne Gladwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThorneGladwin/alexa_skill_template/issues"
+  },
+  "homepage": "https://github.com/ThorneGladwin/alexa_skill_template#readme"
+}
