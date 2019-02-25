@@ -23,7 +23,11 @@ A basic template for building an Alexa skill with deployment &amp; backup script
     ```
     > Each time you open a new terminal session, you will need to re-run this command. 
 10. Set all the environment variables that are mentioned in ./env.example
-11. Run the following command to finish.
+11. Run the following command to get the skill manifest details from your newly created Alexa skill.
+    ```
+    npm run get:skill
+    ```
+12. Run the following command to finish.
     ```
     npm run deploy:all
     ```
@@ -34,6 +38,12 @@ Replaces the existing content within ./models/ with the interaction models saved
 
 ### get:lambda
 Creates a backup of the existing lambda function functionality and saves it in the backup folder. The local version of lambda is replaces with the latest version of lambda from the cloud.
+
+## get:skill
+Retrieves the latest skill manifest from the cloud. A backup of the local version will be taken beforehand.
+
+## get:all
+Runs get:skill, get:model and get:lambda together.
 
 ### deploy:skill
 Deploys the local version of skill.json to the cloud. A backup of the cloud version is taken beforehand.
