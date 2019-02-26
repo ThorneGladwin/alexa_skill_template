@@ -1,3 +1,5 @@
+const langHelper = require("../../helpers/languageHelperFunctions");
+
 module.exports = {
     canHandle(handlerInput) {
       const request = handlerInput.requestEnvelope.request;

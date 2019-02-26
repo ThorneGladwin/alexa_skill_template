@@ -10,8 +10,8 @@ module.exports = {
     const speechOutput = langHelper.resourceData(handlerInput).HelloWorldIntent;
 
     return handlerInput.responseBuilder
-      .speak(speechOutput.HelpRequest.OutputSpeech)
-      .reprompt(speechOutput.HelpRequest.RepromptSpeech)
+      .speak(speechOutput.OutputSpeech)
+      .reprompt(speechOutput.RepromptSpeech)
       .getResponse();
   }
 };
