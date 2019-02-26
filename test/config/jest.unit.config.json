@@ -2,8 +2,17 @@
     "rootDir": "../../",
     "roots": ["<rootDir>/lambda/custom"],
     "verbose": true,
-    "testPathIgnorePatterns": [],
-    "coveragePathIgnorePatterns": [],
+    "testPathIgnorePatterns": [
+        "/.backup/",
+        "./lambda/custom/resources/"
+        ],
+    "coveragePathIgnorePatterns": [
+        "./lambda/custom/index.js",
+        "./lambda/custom/handlers/core/index.js",
+        "./lambda/custom/handlers/custom/index.js",
+        "./lambda/custom/resources/en-gb",
+        "/node_modules/"
+    ],
     "collectCoverageFrom": ["lambda/custom/**/*.js"],
     "testEnvironment": "node",
     "coverageDirectory": "./coverage/",
