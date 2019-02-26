@@ -1,0 +1,19 @@
+{
+  "name": "alexa-skill-template-lambda",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.10"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Thorne Gladwin",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk": "^2.4.0",
+    "ask-sdk-core": "^2.4.0",
+    "ask-sdk-model": "^1.11.2",
+    "dotenv": "^6.2.0",
+    "lodash": "^4.17.11"
+  }
+}
