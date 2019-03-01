@@ -1,0 +1,17 @@
+{
+    "requestEnvelope": {
+      "version": "1.0",
+      "request": {
+        "type": "IntentRequest",
+        "requestId": "",
+        "timestamp": "2018-06-04T13:28:39Z",
+        "locale": "en-GB",
+        "intent": {
+          "name": "AMAZON.HelpIntent",
+          "confirmationStatus": "NONE"
+        },
+        "dialogState": "STARTED"
+      }
+    }
+  }
+  

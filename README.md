@@ -17,7 +17,7 @@ A basic template for building an Alexa skill with deployment &amp; backup script
     ask init
     ```
 8. Open /.ask/config and set [your_ask_profile] to the profile created in the previous step. Also replace [skill_id] and [lambda_function] within this file.
-9. If your user account for AWS uses MFA, run the following command to generate a token.
+9. If your user account for AWS uses MFA, run the following command to generate a token. You will need to have added MFA_SERIAL to your .env file.
     ```
     source ./scripts/updateAWSCredentials.sh [your_mfa_code]
     ```

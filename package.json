@@ -12,7 +12,7 @@
     "get:model": "./scripts/get-model.sh",
     "get:lambda": "./scripts/get-lambda.sh",
     "get:all": "npm run get:skill && npm run get:model && npm run get:lambda",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles --config=./test/config/jest.unit.config.json"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/ThorneGladwin/alexa_skill_template#readme",
   "devDependencies": {
     "ask-cli": "^1.6.2",
-    "ask-sdk": "^2.4.0"
+    "ask-sdk": "^2.4.0",
+    "jest": "^24.1.0"
   }
 }

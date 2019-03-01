@@ -27,7 +27,7 @@ echo "Backup folder created on $localOrCloud for $target: $cloudBackupFolder"
 
 # Get skill (for backup)
 echo "Get skill for backup: $cloudBackupFolder/skill.json"
-ask api get-skill -p $SKILL_PROFILE -s $SKILL_ID -g $SKILL_ENV > "$cloudBackupFolder/skill.json"
+ask api get-skill -p $SKILL_PROFILE -s $SKILL_ID > "$cloudBackupFolder/skill.json"
 
 # Deploy the skill
 echo "Deploying the $target"

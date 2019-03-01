@@ -1,0 +1,23 @@
+{
+    "requestEnvelope": {
+      "version": "1.0",
+      "session": {
+        "sessionId": "sessionId",
+        "application": {
+          "applicationId": "appId"
+        },
+        "user": {
+          "userId": "userId",
+          "accessToken": "accessToken"
+        },
+        "new": true
+      },
+      "request": {
+        "type": "LaunchRequest",
+        "requestId": "",
+        "timestamp": "2018-06-01T08:52:30Z",
+        "locale": "en-GB",
+        "shouldLinkResultBeReturned": false
+      }
+    }
+  }

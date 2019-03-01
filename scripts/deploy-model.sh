@@ -30,7 +30,7 @@ for file in models/*; do
     fileNoExt=${file##*/}
     language=${fileNoExt%.*}
     echo "Updating model for $language: $cloudBackupFolder/$language.json"
-    ask api get-model -p $SKILL_PROFILE -s $SKILL_ID -g $SKILL_ENV -l $language > "$cloudBackupFolder/$language.json"
+    ask api get-model -p $SKILL_PROFILE -s $SKILL_ID -l $language > "$cloudBackupFolder/$language.json"
 done
 
 # Deploy

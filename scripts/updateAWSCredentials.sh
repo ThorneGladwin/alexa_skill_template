@@ -6,10 +6,12 @@
 # Note
 #
 # After running this script we should have the environment variables created, and then we can test if aws is working:
-# aws lambda get-function --function-name arn:aws:lambda:eu-west-1:042320015852:function:alexa-poc
 
 #!/bin/bash 
 set -o pipefail
+
+# get environment variables from .env
+[ -f .env ] && source .env
 
 #enable mfa (required for assume role)
 if [[ -z $MFA_SERIAL ]]; then
