@@ -28,7 +28,7 @@ describe("FallbackRequestHandler", () => {
   });
 
   describe("handle", () => {
-    const responseBuilder = {
+    fallbackRequest.responseBuilder = {
       speak: jest.fn().mockImplementation(function mock() {
         return this;
       }),
@@ -39,8 +39,6 @@ describe("FallbackRequestHandler", () => {
         return this;
       })
     };
-
-    fallbackRequest.responseBuilder = responseBuilder;
 
     beforeEach(() => {
       jest.clearAllMocks();

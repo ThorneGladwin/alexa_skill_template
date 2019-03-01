@@ -60,6 +60,7 @@ describe("ExitRequestHandler", () => {
 
     stopRequest.responseBuilder = responseBuilder;
     cancelRequest.responseBuilder = responseBuilder;
+    
     beforeEach(() => {
       jest.clearAllMocks();
     });

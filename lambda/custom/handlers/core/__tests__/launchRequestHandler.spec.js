@@ -28,7 +28,7 @@ describe("LaunchRequestHandler", () => {
   });
 
   describe("handle", () => {
-    const responseBuilder = {
+    launchRequest.responseBuilder = {
       speak: jest.fn().mockImplementation(function mock() {
         return this;
       }),
@@ -39,8 +39,6 @@ describe("LaunchRequestHandler", () => {
         return this;
       })
     };
-
-    launchRequest.responseBuilder = responseBuilder;
 
     beforeEach(() => {
       jest.clearAllMocks();

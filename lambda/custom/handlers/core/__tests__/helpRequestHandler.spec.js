@@ -28,7 +28,7 @@ describe("HelpRequestHandler", () => {
   });
 
   describe("handle", () => {
-    const responseBuilder = {
+    helpRequest.responseBuilder = {
       speak: jest.fn().mockImplementation(function mock() {
         return this;
       }),
@@ -39,8 +39,6 @@ describe("HelpRequestHandler", () => {
         return this;
       })
     };
-
-    helpRequest.responseBuilder = responseBuilder;
 
     beforeEach(() => {
       jest.clearAllMocks();

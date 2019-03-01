@@ -10,7 +10,7 @@
         "./lambda/custom/index.js",
         "./lambda/custom/handlers/core/index.js",
         "./lambda/custom/handlers/custom/index.js",
-        "./lambda/custom/resources/en-gb",
+        "./lambda/custom/resources/",
         "/node_modules/"
     ],
     "collectCoverageFrom": ["lambda/custom/**/*.js"],

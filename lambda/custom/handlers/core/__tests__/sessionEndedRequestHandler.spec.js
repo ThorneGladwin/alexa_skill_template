@@ -28,7 +28,7 @@ describe("SessionEndedRequestHandler", () => {
   });
 
   describe("handle", () => {
-    const responseBuilder = {
+    sessionEndedRequest.responseBuilder = {
       speak: jest.fn().mockImplementation(function mock() {
         return this;
       }),
@@ -39,8 +39,6 @@ describe("SessionEndedRequestHandler", () => {
         return this;
       })
     };
-
-    sessionEndedRequest.responseBuilder = responseBuilder;
 
     beforeEach(() => {
       jest.clearAllMocks();
