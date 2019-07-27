@@ -66,3 +66,6 @@ typings/
 # ASK Configuration
 .ask
 hooks
+
+# Misc
+.DS_Store
