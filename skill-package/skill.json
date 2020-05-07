@@ -3,7 +3,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "[lambda_url]"
+          "uri": "[your_lambda_function_arn]"
         },
         "interfaces": []
       }
@@ -12,7 +12,7 @@
     "publishingInformation": {
       "locales": {
         "en-GB": {
-          "name": "Test Skill"
+          "name": "[your_alexa_skill_name]"
         }
       }
     }

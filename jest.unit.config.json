@@ -1,0 +1,19 @@
+{
+    "rootDir": ".",
+    "roots": ["<rootDir>/lambda/"],
+    "verbose": true,
+    "testPathIgnorePatterns": [
+        "./lambda/resources/"
+        ],
+    "coveragePathIgnorePatterns": [
+        "./lambda/index.js",
+        "./lambda/handlers/core/index.js",
+        "./lambda/handlers/custom/index.js",
+        "./lambda/resources/",
+        "/node_modules/"
+    ],
+    "collectCoverageFrom": ["lambda/**/*.js"],
+    "testEnvironment": "node",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+}

@@ -1,18 +1,10 @@
 {
   "name": "alexa-skill-template",
   "version": "1.0.0",
-  "description": "Basic template for building an Alexa skill with deployment and backup scripts.",
-  "main": "lambda/custom/index.js",
+  "description": "A simple template that can be used help create new Alexa skills.",
+  "main": "lambda/index.js",
   "scripts": {
-    "deploy:skill": "./scripts/deploy-skill.sh",
-    "deploy:model": "./scripts/deploy-model.sh",
-    "deploy:lambda": "./scripts/deploy-lambda.sh",
-    "deploy:all": "npm run deploy:skill && npm run deploy:model && npm run deploy:lambda",
-    "get:skill": "./scripts/get-skill.sh",
-    "get:model": "./scripts/get-model.sh",
-    "get:lambda": "./scripts/get-lambda.sh",
-    "get:all": "npm run get:skill && npm run get:model && npm run get:lambda",
-    "test": "jest --detectOpenHandles --config=./test/config/jest.unit.config.json"
+    "test": "jest --detectOpenHandles --config=jest.unit.config.json"
   },
   "repository": {
     "type": "git",
@@ -25,8 +17,6 @@
   },
   "homepage": "https://github.com/ThorneGladwin/alexa_skill_template#readme",
   "devDependencies": {
-    "ask-cli": "1.7.23",
-    "ask-sdk": "2.7.0",
     "jest": "25.1.0"
   }
 }
